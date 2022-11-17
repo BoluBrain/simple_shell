@@ -87,11 +87,13 @@ char *error_not_found(data_shell *datash)
 	int length;
 	char *error;
 	char *ver_str;
-OAOAOA
+	
+
 	ver_str = aux_itoa(datash->counter);
-OAOAOA	length = _strlen(datash->av[0]) + _strlen(ver_str);
+	length = _strlen(datash->av[0]) + _strlen(ver_str);
 	length += _strlen(datash->args[0]) + 16;
 	error = malloc(sizeof(char) * (length + 1));
+
 	if (error == 0)
 	{
 		free(error);
